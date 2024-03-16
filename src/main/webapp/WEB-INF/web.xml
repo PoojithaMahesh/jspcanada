@@ -4,4 +4,17 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+  <param-name>fees</param-name>
+  <param-value>40000</param-value>
+  </context-param>
+  <servlet>
+  <servlet-name>sign</servlet-name>
+  <servlet-class>studentwithjsp.controller.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>sign</servlet-name>
+  <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

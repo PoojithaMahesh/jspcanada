@@ -11,28 +11,17 @@
 <%if(message!=null){ %>
 <h1><%=message %></h1>
 <%}else{ %>
-<h1><%="Welcome to SignUp Page" %></h1>
+<h1><%="Welcome to Login Page" %></h1>
 <%} %>
-<form action="signup" method="post">
 
-Name::<input type="text" name="name">
-<br>
-<br>
-Address::<input type="text" name="address">
-<br>
-<br>
-Email::<input type="email" name="email">
+<form action="login" method="post">
+Email:<input type="email" name="email">
 <br>
 <br>
 Password::<input type="password" name="password">
 <br>
 <br>
-Phone::<input type="tel" name="phone">
-<br>
-<br>
-<input type="submit" value="SIGNUP">
-
-
+<input type="submit" value="LOGIN">
 
 
 </form>
