@@ -38,6 +38,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 //		email is present
 		if(password.equals(dbPassword)) {
 //			login success
+			req.setAttribute("list",students);
 			RequestDispatcher dispatcher=req.getRequestDispatcher("display.jsp");
 			dispatcher.forward(req, resp);
 			
