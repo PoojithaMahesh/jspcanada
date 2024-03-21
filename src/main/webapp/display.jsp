@@ -9,6 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%String name1=(String)request.getAttribute("name1"); %>
+<%String name=(String)request.getAttribute("name"); %>
+<%if(name!=null){ %>
+<h1><%=name1 %>Details is ChangedBy::<%=name %></h1>
+<%} %>
 <%List<Student> students=(List)request.getAttribute("list"); %>
 <table border="2px">
 <tr>
